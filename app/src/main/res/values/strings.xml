@@ -8,4 +8,6 @@
     <string name="arrival_time_hint">Время прибытия</string>
     <string name="cost_hint">Цена билета</string>
     <string name="submit">Подтвердить</string>
+    <string name="ticket_data">Данные билета</string>
+    <string name="back">Назад</string>
 </resources>
