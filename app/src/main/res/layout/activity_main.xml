@@ -7,12 +7,116 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/header_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/header_hint"
+        android:textAlignment="center"
+        android:textSize="25sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ticket_form"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/ticket_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+
+        app:layout_constraintTop_toBottomOf="@id/header_hint"
+        app:layout_constraintBottom_toTopOf="@id/submit_data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/fieldID"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="#0D6200EE"
+            android:enabled="false"
+            android:hint="@string/id_hint"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/departurePlaceIn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="postalAddress"
+            android:background="#0D6200EE"
+            android:hint="@string/departure_place_hint"
+            android:inputType="textPostalAddress"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/departureTimeIn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="#0D6200EE"
+            android:hint="@string/departure_time_hint"
+            android:inputType="time"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/arrivalPlaceIn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="postalAddress"
+            android:background="#0D6200EE"
+            android:hint="@string/arrival_place_hint"
+            android:inputType="textPostalAddress"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/arrivalTimeIn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="#0D6200EE"
+            android:hint="@string/arrival_time_hint"
+            android:inputType="time"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/fieldCost"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:background="#0D6200EE"
+            android:enabled="false"
+            android:hint="@string/cost_hint"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+
+        android:text="@string/submit"
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toBottomOf="@id/ticket_form"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

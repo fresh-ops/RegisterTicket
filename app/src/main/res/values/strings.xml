@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">RegisterTicket</string>
+    <string name="header_hint">Введите данные о билете</string>
+    <string name="id_hint">ID пользователя</string>
+    <string name="departure_place_hint">Место отправления</string>
+    <string name="departure_time_hint">Время отправления</string>
+    <string name="arrival_place_hint">Место прибытия</string>
+    <string name="arrival_time_hint">Время прибытия</string>
+    <string name="cost_hint">Цена билета</string>
+    <string name="submit">Подтвердить</string>
 </resources>
