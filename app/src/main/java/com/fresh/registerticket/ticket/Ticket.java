@@ -1,7 +1,8 @@
 package com.fresh.registerticket.ticket;
+import java.io.Serializable;
 import java.util.Random;
 
-public class Ticket {
+public class Ticket implements Serializable {
     private final int userID;
     private String departurePlace;
     private String departureTime;
